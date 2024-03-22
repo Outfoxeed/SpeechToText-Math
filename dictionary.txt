@@ -1,0 +1,129 @@
+-- Ponctuations
+espace: 
+point d'interrogation:?
+point d'exclamation:!
+un point:.
+1 point:.
+point:.
+virgule:,
+point-virgule:;
+deux points::
+2 points::
+parenthèse:(
+parenthèse gauche:(
+parenthèse ouvrante:(
+parenthèse fermante:)
+parenthèse droite:)
+
+-- Déplacements curseur
+retour à la ligne:key(enter)
+saut de ligne:key(enter)
+entrée:key(enter)
+goffin:key(end)
+fin:key(end)
+go début:key(home)
+au début:key(home)
+début:key(home)
+go gauche:key(left)
+au gauche:key(left)
+gauche:key(left)
+go droite:key(right)
+au droite:key(right)
+droite:key(right)
+
+-- Supprimer
+annuler:undo()
+retour en arrière:undo()
+supprimer ligne:key(end,shift,home,backspace)
+supprimer mot:key(ctrl,backspace)
+supprime mémo:key(ctrl,backspace)
+supprimer:key(backspace)
+
+-- Comparaisons
+inférieur ou égal à:⩽
+inférieur à:<
+supérieur ou égal à:⩾
+supérieur à:>
+n'est pas égal à:≠
+n'est pas = à:≠
+est égal à:=
+est égal:=
+est =:=
+est équivalent à:⤄
+est équivalent de:⤄
+équivalent à:⤄
+équivalent de:⤄
+équivalence:⤄
+
+-- Symboles
+pour tout:∀
+il existe:∃
+appartenant à:∈
+grand c:ℂ
+grand c'est:ℂ
+grand m:ℕ
+grand n:ℕ
+grand r:ℝ
+grand z:ℤ
+
+-- Opérations
+plus:+
+moins:-
+fois:×
+foi:×
+divisé:÷
+diviser:÷
+racine carrée de:√
+racine carrée:√
+au carré:²
+ark cosinus:arccos
+archos:arccos
+cosinus:cos
+parc sinus:arcsin
+arc sinus:arcsin
+ark sinus:arcsin
+arsin:arcsin
+ark syn:arcsin
+sinus:sin
+arc tangente:arctan
+arc tangent:arctan
+tangeante:tan
+l'intégrale de:∫
+intégrale de:∫
+l'intégrale:∫
+intégrale:∫
+
+-- Fractions
+un demi:1/2
+1 demi:1/2
+un tiers:1/3
+1 tiers:1/3
+1 tier:1/3
+un quart:1/4
+1 quart:1/4
+zéro:0
+
+-- Fonctions
+-- TODO
+
+-- Chiffres romains
+un chiffre romain:Ⅰ
+1 chiffre romain:Ⅰ
+2 chiffres romains:Ⅱ
+3 chiffres romains:Ⅲ
+4 chiffres romains:Ⅳ
+5 chiffres romains:Ⅴ
+6 chiffres romains:Ⅵ
+7 chiffres romains:Ⅶ
+8 chiffres romains:Ⅷ
+9 chiffres romains:Ⅸ
+10 chiffres romains:Ⅹ
+
+-- Autres
+nouveau chapitre:key(enter,X,.,space)
+
+-- Application
+mise à jour:update()
+arrêter:stop()
+arrête:stop()
+stoppe:stop()
