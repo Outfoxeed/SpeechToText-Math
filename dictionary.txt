@@ -2,18 +2,79 @@
 espace: 
 point d'interrogation:?
 point d'exclamation:!
+deux points::
+de points::
+2 points::
 un point:.
 1 point:.
 point:.
 virgule:,
 point-virgule:;
-deux points::
-2 points::
-parenthèse:(
+retour à la ligne:\n
+
+-- Parenthèses
+ouvrir parenthèses:(
+ouvrir parenthèse:(
+fermer parenthèses:)
+fermer parenthèse:)
 parenthèse gauche:(
 parenthèse ouvrante:(
+parenthèse ouverte:(
 parenthèse fermante:)
+parenthèse fermée:)
 parenthèse droite:)
+parenthèse:(
+
+-- Lettres (Mixte entre)
+able majuscule:A
+able minuscule:a
+able:a
+à bleu majuscule:A
+à bleu minuscule:a
+à bleu:a
+bravo majuscule:B
+bravo minuscule:b
+bravo:b
+charlie majuscule:C
+charlie minuscule:c
+charlie:c
+dog majuscule:D
+dog minuscule:d
+dog:d
+écho majuscule:E
+écho minuscule:e
+écho:e
+fox-trot majuscule:F
+foxtrot minuscule:f
+foxtrot:f
+golf majuscule:G
+golf minuscule:g
+golf:g
+hôtel majuscule:H
+hôtel minuscule:h
+hôtel:h
+india majuscule:I
+india minuscule:i
+india:i
+juliette majuscule:J
+juliette minuscule:j
+juliette:j
+king majuscule:K
+king minuscule:k
+king:k
+xylophone majuscule:X
+xylophone minuscule:x
+xylophone:x
+x-ray majuscule:X
+x-ray minuscule:x
+x-ray:x
+yankee majuscule:Y
+yankee minuscule:y
+yankee:y
+zoulou majuscule:Z
+zoulou minuscule:z
+zoulou:z
+
 
 -- Déplacements curseur
 retour à la ligne:key(enter)
@@ -54,6 +115,7 @@ est équivalent de:⤄
 équivalent à:⤄
 équivalent de:⤄
 équivalence:⤄
+équivaut à:⤄
 
 -- Symboles
 pour tout:∀
@@ -64,6 +126,7 @@ grand c'est:ℂ
 grand m:ℕ
 grand n:ℕ
 grand r:ℝ
+grand air:ℝ
 grand z:ℤ
 
 -- Opérations
@@ -71,11 +134,17 @@ plus:+
 moins:-
 fois:×
 foi:×
+multiplié par:*
+multiplié:*
+multiplier par:*
+multiplier:*
+divisé par:÷
 divisé:÷
+diviser par:÷
 diviser:÷
 racine carrée de:√
 racine carrée:√
-au carré:²
+ au carré:²
 ark cosinus:arccos
 archos:arccos
 cosinus:cos
@@ -105,8 +174,19 @@ zéro:0
 
 -- Fonctions
 -- TODO
+ prime:'
 
--- Chiffres romains
+-- Chiffres
+numéro 1:1
+numéro 2:2
+numéro 3:3
+numéro 4:4
+numéro 5:5
+numéro 6:6
+numéro 7:7
+numéro 8:8
+numéro 9:9
+numéro 10:10
 un chiffre romain:Ⅰ
 1 chiffre romain:Ⅰ
 2 chiffres romains:Ⅱ
