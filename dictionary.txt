@@ -1,209 +1,153 @@
 -- Ponctuations
-espace: 
-point d'interrogation:?
-point d'exclamation:!
-deux points::
-de points::
-2 points::
-un point:.
-1 point:.
-point:.
-virgule:,
-point-virgule:;
-retour à la ligne:\n
+ :{espace}
+::{deux points;de points;2 points}
+?:{point d'interrogation}
+!:{point d'exclamation}
+;:{point-virgule;point virgule}
+.:{un point;1 point;point}
+,:{virgule}
+\n:{retour à la ligne}
 
 -- Parenthèses
-ouvrir parenthèses:(
-ouvrir parenthèse:(
-fermer parenthèses:)
-fermer parenthèse:)
-parenthèse gauche:(
-parenthèse ouvrante:(
-parenthèse ouverte:(
-parenthèse fermante:)
-parenthèse fermée:)
-parenthèse droite:)
-parenthèse:(
+(:{ouvrir parenthèses;ouvrir parenthèse;parenthèse gauche;parenthèse ouvrante;parenthèse ouverte;parenthèses;parenthèse}
+):{fermer parenthèses;fermer parenthèse;parenthèse fermante;parenthèse fermée;parenthèse droite}
 
 -- Lettres (Mixte entre)
-able majuscule:A
-able minuscule:a
-able:a
-à bleu majuscule:A
-à bleu minuscule:a
-à bleu:a
-bravo majuscule:B
-bravo minuscule:b
-bravo:b
-charlie majuscule:C
-charlie minuscule:c
-charlie:c
-dog majuscule:D
-dog minuscule:d
-dog:d
-écho majuscule:E
-écho minuscule:e
-écho:e
-fox-trot majuscule:F
-foxtrot minuscule:f
-foxtrot:f
-golf majuscule:G
-golf minuscule:g
-golf:g
-hôtel majuscule:H
-hôtel minuscule:h
-hôtel:h
-india majuscule:I
-india minuscule:i
-india:i
-juliette majuscule:J
-juliette minuscule:j
-juliette:j
-king majuscule:K
-king minuscule:k
-king:k
-xylophone majuscule:X
-xylophone minuscule:x
-xylophone:x
-x-ray majuscule:X
-x-ray minuscule:x
-x-ray:x
-yankee majuscule:Y
-yankee minuscule:y
-yankee:y
-zoulou majuscule:Z
-zoulou minuscule:z
-zoulou:z
-
+A:{able majuscule;à bleu majuscule}
+a:{able minuscule;à bleu minuscule;able;à bleu}
+B:{bravo majuscule}
+b:{bravo minuscule;bravo}
+C:{charlie majuscule}
+c:{charlie minuscule;charlie}
+D:{dog majuscule}
+d:{dog minuscule;dog}
+E:{écho majuscule}
+e:{écho minuscule;écho}
+F:{fox-trot majuscule;foxtrot majuscule}
+f:{foxtrot minuscule;foxtrot}
+G:{golf majuscule}
+g:{golf minuscule;golf}
+H:{hôtel majuscule}
+h:{hôtel minuscule;hôtel}
+I:{india majuscule}
+i:{india minuscule;india}
+J:{juliette majuscule}
+j:{juliette minuscule;juliette}
+K:{king majuscule}
+k:{kinkg minuscule;king}
+L:{lima majuscule}
+l:{lima minuscule;lima}
+M:{mike majuscule}
+m:{mike minuscule;mike}
+N:{november majuscule}
+n:{november minuscule;november}
+O:{oscar majuscule}
+o:{oscar minuscule;oscar}
+P:{papa majuscule}
+p:{papa minuscule;papa}
+Q:{québec majuscule}
+q:{québec minuscule;québec}
+R:{roméo majuscule}
+r:{roméo minuscule;roméo}
+S:{sierra majuscule}
+s:{sierra minuscule;sierra}
+T:{tango majuscule}
+t:{tango minuscule;tango}
+U:{uruguay majuscule}
+u:{uruguay minuscule;uruguay}
+V:{victor majuscule}
+v:{victor minuscule;victor}
+W:{whishey majuscule;whisky majuscule}
+w:{whiskey minuscule;whiskey;whisky minuscule;whisky}
+X:{xylophone majuscule;x-ray majuscule}
+x:{xylophone minuscule;xylophone;x-ray minuscule;x-ray}
+Y:{yankee majuscule}
+y:{yankee minuscule;yankee}
+Z:{zoulou majuscule}
+z:{zoulou minuscule;zoulou}
 
 -- Déplacements curseur
-retour à la ligne:key(enter)
-saut de ligne:key(enter)
-entrée:key(enter)
-goffin:key(end)
-fin:key(end)
-go début:key(home)
-au début:key(home)
-début:key(home)
-go gauche:key(left)
-au gauche:key(left)
-gauche:key(left)
-go droite:key(right)
-au droite:key(right)
-droite:key(right)
+key(enter):{retour à la ligne;saut de ligne;entrée;entrer}
+key(end):{goffin;fin}
+key(home):{go début;au début;début}
+key(left):{go gauche;au gauche;gauche}
+key(right):{go droite;au droite;droite}
 
 -- Supprimer
-annuler:undo()
-retour en arrière:undo()
-supprimer ligne:key(end,shift,home,backspace)
-supprimer mot:key(ctrl,backspace)
-supprime mémo:key(ctrl,backspace)
-supprimer:key(backspace)
+undo():{annuler;annule;retour en arrière}
+key(end,shift,home,backspace):{supprimer ligne;supprime ligne}
+key(ctrl,backspace):{supprimer mot;suprime mémo}
+key(backspace):{supprimer;supprime}
 
 -- Comparaisons
-inférieur ou égal à:⩽
-inférieur à:<
-supérieur ou égal à:⩾
-supérieur à:>
-n'est pas égal à:≠
-n'est pas = à:≠
-est égal à:=
-est égal:=
-est =:=
-est équivalent à:⤄
-est équivalent de:⤄
-équivalent à:⤄
-équivalent de:⤄
-équivalence:⤄
-équivaut à:⤄
+⩽:{inférieur ou égal à;inférieur ou égal}
+<:{inférieur à}
+⩾:{supérieur ou égal à}
+>:{supérieur à}
+≠:{n'est pas égal à;n'est pas = à}
+=:{est égal à;est égal;est = à;est =}
+⤄:{est équivalent à;est équivalent de;équivalent à;équivalent de;équivalence;équivaut à}
 
 -- Symboles
-pour tout:∀
-il existe:∃
-appartenant à:∈
-grand c:ℂ
-grand c'est:ℂ
-grand m:ℕ
-grand n:ℕ
-grand r:ℝ
-grand air:ℝ
-grand z:ℤ
+∀:{pour tout}
+∃:{il existe}
+∈:{appartenant à}
+ℂ:{grand c;grand c'est}
+ℕ:{grand m;grand n}
+ℝ:{grand air;grand r}
+ℤ:{grand z}
 
 -- Opérations
-plus:+
-moins:-
-fois:×
-foi:×
-multiplié par:*
-multiplié:*
-multiplier par:*
-multiplier:*
-divisé par:÷
-divisé:÷
-diviser par:÷
-diviser:÷
-racine carrée de:√
-racine carrée:√
- au carré:²
-ark cosinus:arccos
-archos:arccos
-cosinus:cos
-parc sinus:arcsin
-arc sinus:arcsin
-ark sinus:arcsin
-arsin:arcsin
-ark syn:arcsin
-sinus:sin
-arc tangente:arctan
-arc tangent:arctan
-tangeante:tan
-l'intégrale de:∫
-intégrale de:∫
-l'intégrale:∫
-intégrale:∫
-
--- Fractions
-un demi:1/2
-1 demi:1/2
-un tiers:1/3
-1 tiers:1/3
-1 tier:1/3
-un quart:1/4
-1 quart:1/4
-zéro:0
++:{plus}
+-:{moins}
+×:{fois;foi}
+*:{multiplié par;multiplié;multiplier par;multiplier}
+÷:{divisé par;divisé;diviser par;diviser}
+√:{racine carrée de;racine carrée}
+²:{ au carré}
+arccos:{ark cosinus;archos}
+cos:{cosinus}
+arcsin:{parc sinus;arc sinus;ark sinus;arsin;ark syn}
+sin:{sinus}
+arctan:{arc tangente;arc tangent}
+tan:{tangeante}
+∫:{l'intégrale de;intégrale de;l'intégrale;intégrale}
 
 -- Fonctions
 -- TODO
- prime:'
+':{ prime}
+
+-- Fractions
+1/2:{un demi;1 demi}
+1/3:{un tiers;1 tiers;1 tier}
+1/4:{un quart;1 quart}
 
 -- Chiffres
-numéro 1:1
-numéro 2:2
-numéro 3:3
-numéro 4:4
-numéro 5:5
-numéro 6:6
-numéro 7:7
-numéro 8:8
-numéro 9:9
-numéro 10:10
-un chiffre romain:Ⅰ
-1 chiffre romain:Ⅰ
-2 chiffres romains:Ⅱ
-3 chiffres romains:Ⅲ
-4 chiffres romains:Ⅳ
-5 chiffres romains:Ⅴ
-6 chiffres romains:Ⅵ
-7 chiffres romains:Ⅶ
-8 chiffres romains:Ⅷ
-9 chiffres romains:Ⅸ
-10 chiffres romains:Ⅹ
+0:{numéro zéro;numéro 0;zéro}
+1:{numéro 1}
+2:{numéro 2}
+3:{numéro 3}
+4:{numéro 4}
+5:{numéro 5}
+6:{numéro 6}
+7:{numéro 7}
+8:{numéro 8}
+9:{numéro 9}
+10:{numéro 10}
+Ⅰ:{numéro 1 romain;numéro un romain}
+Ⅱ:{numéro 2 romain;numéro deux romain}
+Ⅲ:{numéro 3 romain;numéro trois romain}
+Ⅳ:{numéro 4 romain;numéro quatre romain}
+Ⅴ:{numéro 5 romain;numéro cinq romain}
+Ⅵ:{numéro 6 romain;numéro six romain}
+Ⅶ:{numéro 7 romain;numéro sept romain}
+Ⅷ:{numéro 8 romain;numéro huit romain}
+Ⅸ:{numéro 9 romain;numéro neuf romain}
+Ⅹ:{numéro 10 romain;numéro dix romain}
 
 -- Autres
-nouveau chapitre:key(enter,X,.,space)
+key(enter,X,.,space):{nouveau chapitre}
 
 -- Application
-mise à jour:update()
-arrêter:stop()
-arrête:stop()
-stoppe:stop()
+update():{mise à jour}
+stop():{arrêter;arrête;stoppe;stop}

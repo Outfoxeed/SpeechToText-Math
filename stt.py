@@ -25,9 +25,15 @@ def __create_dictionary() -> dict:
     for line in f:
         if line == "\n" or line.startswith("--"):
             continue
-        (key, value) = line.split(':', maxsplit=1)
-        value = value.removesuffix("\n")
-        result[key] = value
+        (value, key) = line.rsplit(':', maxsplit=1)
+        key = key.removesuffix("\n")
+        
+        if "{" in key and "}" in key: # Multiple keys are possible for the same value
+            key = key[key.index("{")+1:key.index("}")]
+            for sub_key in key.split(";"):
+                result[sub_key] = value 
+        else: # Only one key exists for this value
+            result[key] = value
     f.close()
     return result
 
@@ -75,10 +81,13 @@ def main():
     while True:
         try:
             with sr.Microphone() as mic:
+                print("Adjusting for ambient noises..")
                 r.adjust_for_ambient_noise(mic, duration=0.2)
-                print("Listening...")
                 
+                print("Listening...")
                 audio = r.listen(mic)
+                
+                print("Interpreting...")
                 text: str = r.recognize_google(audio, language="fr-FR")
                 text = text.lower()
 
@@ -88,13 +97,13 @@ def main():
                     if not running:
                         return
                     
-                    if "(" in value and ")" in value:
-                        if text == key:
-                            if __handle_function(value):
-                                text = ""
-                                break # Stop iteration here if a function has been processed
+                    if text == key and "(" in value and ")" in value:
+                        if __handle_function(value):
+                            text = ""
+                            break # Stop iteration here if a function has been processed
                     else:
                         while key in text:
+                            print(f"Replaced '{key}' by '{value}'")
                             text = text.replace(key, value)
                             
                 if text != "":
@@ -109,7 +118,6 @@ def main():
         except sr.UnknownValueError:
             print("Understood nothing")
             r = sr.Recognizer()
-            continue
         except:
             print("Unexpected error. Continuing process")
         print("\n")
