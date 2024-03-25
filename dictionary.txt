@@ -13,58 +13,58 @@
 ):{fermer parenthèses;fermer parenthèse;parenthèse fermante;parenthèse fermée;parenthèse droite}
 
 -- Lettres (Mixte entre)
-A:{able majuscule;à bleu majuscule}
-a:{able minuscule;à bleu minuscule;able;à bleu}
-B:{bravo majuscule}
-b:{bravo minuscule;bravo}
-C:{charlie majuscule}
-c:{charlie minuscule;charlie}
-D:{dog majuscule}
-d:{dog minuscule;dog}
-E:{écho majuscule}
-e:{écho minuscule;écho}
-F:{fox-trot majuscule;foxtrot majuscule}
-f:{foxtrot minuscule;foxtrot}
-G:{golf majuscule}
-g:{golf minuscule;golf}
-H:{hôtel majuscule}
-h:{hôtel minuscule;hôtel}
-I:{india majuscule}
-i:{india minuscule;india}
-J:{juliette majuscule}
-j:{juliette minuscule;juliette}
-K:{king majuscule}
-k:{kinkg minuscule;king}
-L:{lima majuscule}
-l:{lima minuscule;lima}
-M:{mike majuscule}
-m:{mike minuscule;mike}
-N:{november majuscule}
-n:{november minuscule;november}
-O:{oscar majuscule}
-o:{oscar minuscule;oscar}
-P:{papa majuscule}
-p:{papa minuscule;papa}
+A:{amsterdam majuscule}
+a:{amsterdam minuscule;amsterdam}
+B:{baltimore majuscule}
+b:{baltimore minuscule;baltimore}
+C:{casablanca majuscule}
+c:{casablanca minuscule;casablanca}
+D:{danemark majuscule}
+d:{danemark minuscule;danemark}
+E:{edison majuscule}
+e:{edison minuscule;edison}
+F:{floride majuscule;florid majuscule}
+f:{floride minuscule;florid minuscule;floride;florid}
+G:{gibraltar majuscule}
+g:{gibraltar minuscule;gibraltar}
+H:{havane majuscule}
+h:{havane minuscule;havane}
+I:{italie majuscule}
+i:{italie minuscule;italie}
+J:{jérusalem majuscule}
+j:{jérusalem minuscule;jérusalem}
+K:{kimberley majuscule}
+k:{kimberley minuscule;kimberley}
+L:{liverpool majuscule}
+l:{liverpool minuscule;liverpool}
+M:{madagascar majuscule}
+m:{madagascar minuscule;madagascar}
+N:{new york majuscule}
+n:{new york minuscule;new york}
+O:{oslo majuscule}
+o:{oslo minuscule;oslo}
+P:{paris majuscule}
+p:{paris minuscule;paris}
 Q:{québec majuscule}
 q:{québec minuscule;québec}
-R:{roméo majuscule}
-r:{roméo minuscule;roméo}
-S:{sierra majuscule}
-s:{sierra minuscule;sierra}
-T:{tango majuscule}
-t:{tango minuscule;tango}
+R:{rome majuscule}
+r:{rome minuscule;rome}
+S:{santiago majuscule}
+s:{santiago minuscule;santiago}
+T:{tokyo majuscule}
+t:{tokyo minuscule;tokyo}
 U:{uruguay majuscule}
 u:{uruguay minuscule;uruguay}
-V:{victor majuscule}
-v:{victor minuscule;victor}
-W:{whishey majuscule;whisky majuscule}
-w:{whiskey minuscule;whiskey;whisky minuscule;whisky}
-X:{xylophone majuscule;x-ray majuscule}
-x:{xylophone minuscule;xylophone;x-ray minuscule;x-ray}
+V:{valence majuscule}
+v:{valence minuscule;valence}
+W:{washington majuscule}
+w:{washington minuscule;washington}
+X:{xylophone majuscule}
+x:{xylophone minuscule;xylophone}
 Y:{yankee majuscule}
 y:{yankee minuscule;yankee}
-Z:{zoulou majuscule}
-z:{zoulou minuscule;zoulou}
+Z:{zurich majuscule}
+z:{zurich minuscule;zurich}
 
 -- Déplacements curseur
 key(enter):{retour à la ligne;saut de ligne;entrée;entrer}
